@@ -1,0 +1,19 @@
+html {
+    background-color: #f7f7f7;
+}
+
+.app-wrapper {
+    margin: 0 auto;
+    display: grid;
+    grid-template-areas:
+        "header header header"
+        "nav content friends";
+    /*friends*/
+    grid-template-columns:  2fr 9fr 1fr;
+    grid-gap: 15px;
+
+}
+
+.app-wrapper-content {
+    grid-area: content;
+}

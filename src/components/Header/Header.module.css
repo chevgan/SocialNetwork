@@ -1,0 +1,18 @@
+.header {
+    display: flex;
+    align-items: center;
+    height: 65px;
+    grid-area: header;
+    background-color: #ffffff;
+    padding-left: 15px;
+
+
+}
+.header h2 {
+    color: #3f414d;
+    padding-left: 20px;
+    font-weight: 200;
+    font-size: 25px;
+
+}
+

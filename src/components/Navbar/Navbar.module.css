@@ -1,0 +1,38 @@
+.nav {
+    grid-area: nav;
+    border-radius: 15px;
+    font-size: calc(5px + 2vmin);
+}
+
+.item {
+    display: flex;
+    align-items: center;
+    color: #777d74;
+    font-size: 15px;
+    text-decoration: none;
+    font-weight: 200;
+    margin-top: 12px;
+    margin-left: 10px;
+
+}
+.active {
+    align-items: center;
+    font-weight: 400;
+    color: #50b5ff;
+    margin-left: 10px;
+    text-decoration: none;
+    margin-top: 12px;
+}
+
+.descr {
+    padding-left: 20px;
+    font-size: 12px;
+    color: #3f414d;
+    letter-spacing: .2rem;
+}
+
+.mainColor{
+    margin-top: 12px;
+    margin-left: 20px;
+    color: #50b5ff;
+}

@@ -1,0 +1,9 @@
+.friends {
+    grid-area: friends;
+    background-color: white;
+
+}
+
+.item {
+    color: #0055ff;
+}
