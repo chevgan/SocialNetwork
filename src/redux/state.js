@@ -14,6 +14,12 @@ let  state = {
             {id: 1, name: "Askar"},
             {id: 2, name: "Bogdan"}
         ]
+    },
+    friendsNav: {
+        friendsNavBar: [
+            {id: 1, name: "Askar"},
+            {id: 2, name: "Bogdan"}
+        ]
     }
 }
 

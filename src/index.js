@@ -12,6 +12,7 @@ root.render(
         posts={state.profilePage.post}
         dialogs={state.messagesPage.dialogs}
         messages={state.messagesPage.messages}
+        friendsNavBar={state.friendsNav.friendsNavBar}
     />
   </React.StrictMode>
 );
