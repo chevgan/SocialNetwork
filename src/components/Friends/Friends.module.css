@@ -1,6 +1,7 @@
 .friends {
     grid-area: friends;
     background-color: white;
+    width: 220px;
 
 }
 

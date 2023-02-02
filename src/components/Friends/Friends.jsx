@@ -3,8 +3,7 @@ import FriendsItem from './FriendsItem/FriendsItem'
 import s from "./Friends.module.css"
 
 const Friends = (props) => {
-debugger
-    let friendElements = props.friendsNavBar.map( f => <FriendsItem name={f.name}/> );
+    let friendElements = props.friendsNavBar.map( f => <FriendsItem name={f.name} status={f.status}/> );
     return (
         <div className={s.friends}>
             {friendElements}

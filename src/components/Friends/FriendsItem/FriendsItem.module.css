@@ -1,0 +1,14 @@
+.friendsItem {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.img {
+    display: flex;
+    margin: 10px;
+}
+
+.status {
+    color: #6ce151;
+
+}
