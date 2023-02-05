@@ -1,5 +1,7 @@
 import React from "react";
 import Post from "./Post/Post";
+import state, {updateNewPostText} from "../../../redux/state";
+import {type} from "@testing-library/user-event/dist/type";
 
 const MyPosts = (props) => {
 
@@ -7,13 +9,22 @@ const MyPosts = (props) => {
 
     let newPostElement = React.createRef();
     let addPost = () => {
-        let text = newPostElement.current.value;
-        props.addPost(text)
+        props. dispatch({type: 'ADD-POST'})
     }
+
+    let onPostChange = () => {
+        let text = newPostElement.current.value;
+        let action = {type: 'UPDATE-NEW-POST-TEXT', newText: text};
+        props.dispatch(action);
+
+    }
+
+
+
     return (
         <div>
-            <textarea ref={newPostElement} cols="30" rows="10"></textarea>
-            <button onClick={ addPost }>Добавить пост</button>
+            <textarea onChange={onPostChange} ref={newPostElement} cols="30" rows="10" value={props.newPostText} />
+            <button onClick={ addPost  }>Добавить пост</button>
                 <div>
                     { postElements }
                 </div>

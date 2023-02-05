@@ -3,6 +3,7 @@ import s from './Profile.module.css';
 import MyPosts from "./MyPost/MyPosts";
 import ProfileInfo from "./ProfileInfo/ProfileInfo";
 import BannerProfile from "./BannerProfile/BannerProfile";
+import {updateNewPostText} from "../../redux/state";
 
 const Profile = (props) => {
 
@@ -13,7 +14,9 @@ const Profile = (props) => {
                 <ProfileInfo />
 
                 <div className={s.contentProfile}>
-                    <MyPosts posts={props.posts} addPost={props.addPost}/>
+                    <MyPosts posts={props.posts}
+                             dispatch={props.dispatch}
+                             newPostText={props.newPostText}/>
                 </div>
 
                 <div className={s.photoProfile}>
