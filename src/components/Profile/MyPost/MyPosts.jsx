@@ -1,6 +1,6 @@
 import React from "react";
 import Post from "./Post/Post";
-import state, {addPostActionCreator, updateNewPostActionCreator} from "../../../redux/state";
+import state, {addPostActionCreator, updateNewPostActionCreator} from "../../../redux/profileReducer";
 import {type} from "@testing-library/user-event/dist/type";
 
 const MyPosts = (props) => {
