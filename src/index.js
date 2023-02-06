@@ -16,6 +16,7 @@ let rerenderEntireTree = () => {
                 messages={store.getState().messagesPage.messages}
                 friendsNavBar={store.getState().friendsNav.friendsNavBar}
                 dispatch={store.dispatch.bind(store)}
+                store={store}
 
             />
         </React.StrictMode>);
