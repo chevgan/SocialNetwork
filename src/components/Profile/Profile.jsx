@@ -1,11 +1,10 @@
-import React from "react";
-import s from './Profile.module.css';
-import MyPosts from "./MyPost/MyPosts";
+import React from 'react';
 import ProfileInfo from "./ProfileInfo/ProfileInfo";
+import MyPostsContainer from "./MyPosts/MyPostsContainer";
 import BannerProfile from "./BannerProfile/BannerProfile";
-import MyPostsContainer from "./MyPost/MyPostsContainer";
+import s from './Profile.module.css'
 
-const Profile = (props) => {
+const Profile = () => {
     return (
         <div>
             <BannerProfile />
@@ -22,7 +21,7 @@ const Profile = (props) => {
             </div>
 
         </div>
-    );
+    )
 }
 
 export default Profile;
