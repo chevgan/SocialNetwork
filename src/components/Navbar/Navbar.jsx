@@ -6,6 +6,7 @@ import ChatIcon from '@mui/icons-material/Chat';
 import NewspaperIcon from '@mui/icons-material/Newspaper';
 import SlowMotionVideoIcon from '@mui/icons-material/SlowMotionVideo';
 import SettingsIcon from '@mui/icons-material/Settings';
+import GroupAddIcon from '@mui/icons-material/GroupAdd';
 
 const Navbar = () => {
     return (
@@ -20,6 +21,11 @@ const Navbar = () => {
             <div className={s.item} >
                 <ChatIcon className={s.mainColor} />
                 <NavLink to="/dialogs" className = { navData => navData.isActive ? s.active : s.item }>Messages</NavLink>
+            </div>
+
+            <div className={s.item} >
+                <GroupAddIcon className={s.mainColor} />
+                <NavLink to="/users" className = { navData => navData.isActive ? s.active : s.item }>Users</NavLink>
             </div>
 
             <div className={s.item}>
