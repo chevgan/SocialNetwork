@@ -10,3 +10,10 @@ img {
     cursor: pointer;
 }
 
+.otherPage {
+    font-weight: 700;
+    color: rgba(80, 181, 255, 0.51);
+    margin: 10px;
+    cursor: pointer;
+}
+

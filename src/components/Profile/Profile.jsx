@@ -4,12 +4,12 @@ import MyPostsContainer from "./MyPosts/MyPostsContainer";
 import BannerProfile from "./BannerProfile/BannerProfile";
 import s from './Profile.module.css'
 
-const Profile = () => {
+const Profile = (props) => {
     return (
         <div>
             <BannerProfile />
             <div className={s.wrapperProfile}>
-                <ProfileInfo />
+                <ProfileInfo profile={props.profile} />
 
                 <div className={s.contentProfile}>
                     <MyPostsContainer />

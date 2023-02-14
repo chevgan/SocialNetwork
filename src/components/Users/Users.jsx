@@ -1,10 +1,13 @@
 import styles from "./Users.module.css";
 import userPhoto from "../../assets/images/user.jpg";
+import {NavLink} from "react-router-dom";
+import Preloader from "../common/preloader/Preloader";
+import React from "react";
+import UsersContainer from "./UsersContainer";
 
 let Users = (props) => {
 
     let pagesCount = Math.ceil (props.totalUsersCount / props.pageSize);
-
     let pages = [];
     for (let i=1; i <= pagesCount; i++) {
         if (pages.length < 10) {
@@ -15,7 +18,7 @@ let Users = (props) => {
     return <div>
         <div>
             { pages.map( p => {
-                return <span className={props.currentPage ===  p && styles.selectedPage }
+                return <span className={props.currentPage ===  p && styles.selectedPage || styles.otherPage }
                              onClick={(e) => { props.onPageChanged(p); }}>{p}</span>
             })}
         </div>
@@ -23,7 +26,9 @@ let Users = (props) => {
             props.users.map(u => <div key={u.id}>
                 <span>
                     <div>
+                        <NavLink to={'/profile/' + u.id}>
                         <img src={u.photos.small != null ? u.photos.small : userPhoto} className={styles.userPhoto}/>
+                        </NavLink>
                     </div>
                     <div>
                         {u.followed
