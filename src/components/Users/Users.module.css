@@ -2,3 +2,11 @@ img {
     width: 100px;
     height: 100px;
 }
+
+.selectedPage {
+    font-weight: 700;
+    color: #50b5ff;
+    margin: 10px;
+    cursor: pointer;
+}
+
