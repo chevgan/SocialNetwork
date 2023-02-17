@@ -21,15 +21,26 @@
     font-size: 20px;
     color: rgba(63, 65, 77, 0.9);
 }
-.nameId {
+
+
+.dataId {
     color: #50b5ff;
     font-size: 15px;
     text-align: center;
+    margin-left: 5px;
 }
-.descrProfile {
-
-    margin-top: 10px;
+.textId {
+    color: #000000;
+    font-size: 15px;
     text-align: center;
-    font-size: 13px;
-    color: rgba(63, 65, 77, 0.85);
+}
+
+.id {
+    display: flex;
+    justify-content: center;
+}
+
+.aboutMe {
+    text-align: center;
+    margin-top: 10px;
 }

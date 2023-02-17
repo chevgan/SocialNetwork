@@ -7,18 +7,19 @@ import DialogsContainer from "./components/Dialogs/DialogsContainer";
 import Friends from "./components/Friends/Friends";
 import UsersContainer from "./components/Users/UsersContainer";
 import ProfileContainer from "./components/Profile/ProfileContainer";
+import HeaderContainer from "./components/Header/HeaderContainer";
 
 
 const App = () => {
     return (
             <BrowserRouter>
                 <div className="app-wrapper">
-                    <Header/>
+                    <HeaderContainer/>
                     <Friends />
                     <Navbar/>
                     <div className="app-content">
                         <Routes>
-                            <Route path='/profile/*' element={<ProfileContainer />}/>
+                            <Route path='/profile/:userId?' element={<ProfileContainer />}/>
                             <Route path='/dialogs' element={<DialogsContainer />}/>
                             <Route path='/users' element={<UsersContainer />}/>
                         </Routes>

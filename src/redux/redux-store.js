@@ -4,12 +4,14 @@ import dialogsReducer from "./dialogs-reducer";
 import sidebarReducer from "./sidebar-reducer";
 import {configureStore} from "@reduxjs/toolkit";
 import usersReducer from "./users-reducer";
+import authReducer from "./auth-reducer";
 
 const rootReducer = combineReducers({
     profilePage: profileReducer,
     dialogsPage: dialogsReducer,
     sidebar: sidebarReducer,
-    usersPage: usersReducer
+    usersPage: usersReducer,
+    auth: authReducer
 })
 
 export const store = configureStore({
