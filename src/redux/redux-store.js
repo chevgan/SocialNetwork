@@ -5,6 +5,7 @@ import sidebarReducer from "./sidebar-reducer";
 import {configureStore} from "@reduxjs/toolkit";
 import usersReducer from "./users-reducer";
 import authReducer from "./auth-reducer";
+import thunk from 'redux-thunk'
 
 const rootReducer = combineReducers({
     profilePage: profileReducer,
