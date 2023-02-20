@@ -1,46 +1,67 @@
 
 .cardProfile {
+    padding: 15px;
+    gap: 40px;
     display: flex;
-    height: 350px;
-    flex-direction: column;
+    flex-direction: row;
     grid-area: card;
     border-radius: 5px;
     background-color: #ffffff;
     box-shadow: 0 0 30px 0 rgba(34, 60, 80, 0.08);
 }
 .cardProfile img {
-    margin: 20px 20px 10px 20px;
+    margin: 0 20px 10px 20px;
     height: 150px;
     width: 150px;
+    border-radius: 10px;
 }
 .avatar {
-    margin: 0 auto;
+    display: flex;
+
 }
 .nameProfile {
     text-align: center;
-    font-size: 20px;
-    color: rgba(63, 65, 77, 0.9);
+    font-size: 17px;
+    color: #3F414D;
+    margin: 0;
+    font-weight: 500;
 }
 
 
+
 .dataId {
-    color: #50b5ff;
-    font-size: 15px;
+    color: #555770;
+    font-size: 13px;
     text-align: center;
     margin-left: 5px;
 }
 .textId {
-    color: #000000;
-    font-size: 15px;
+    color:  #555770;
+    font-size: 13px;
     text-align: center;
 }
-
+.idd {
+    display: flex;
+}
 .id {
     display: flex;
-    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    align-items: flex-start;
 }
 
 .aboutMe {
+    display: flex;
+    flex-direction: column;
     text-align: center;
-    margin-top: 10px;
+
+}
+.aboutMe h4 {
+    margin: 0;
+    color: #3F414D;
+    font-weight: 500;
+}
+.descrProfile {
+    font-weight: 500;
+    color: #3F414D;
 }
