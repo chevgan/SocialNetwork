@@ -27,7 +27,7 @@ const ProfileInfo = (props) => {
                 <div
                     className={s.descrProfile}>{props.profile.aboutMe != null ? props.profile.aboutMe : 'Информации нет...'}</div>
             </div>
-            <ProfileStatus status={"123"}/>
+            <ProfileStatus status={props.status} updateStatus={props.updateStatus}/>
         </div>
     );
 }
