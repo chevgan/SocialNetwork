@@ -2,16 +2,14 @@ import styles from "./Users.module.css";
 import userPhoto from "../../assets/images/user.jpg";
 import {NavLink} from "react-router-dom";
 import React from "react";
-import {usersAPI} from "../../API/api";
 
 let Users = (props) => {
 
-    let pagesCount = Math.ceil (props.totalUsersCount / props.pageSize);
+    let pagesCount = Math.ceil(props.totalUsersCount / props.pageSize);
+
     let pages = [];
-    for (let i=1; i <= pagesCount; i++) {
-        if (pages.length < 10) {
-            pages.push(i);
-        }
+    for (let i = 1; i <= 10; i++) {
+        pages.push(i);
     }
 
     return <div>
