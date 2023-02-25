@@ -2,7 +2,6 @@ import React from 'react';
 import s from './Header.module.css';
 import logo from "../../Icons/Logo.svg";
 import {NavLink} from "react-router-dom";
-import userPhoto from "../../assets/images/user.jpg";
 
 const Header = (props) => {
     return <header className={s.header}>
@@ -10,7 +9,9 @@ const Header = (props) => {
             <img src={logo} alt=""/>
             <h2>SocialChevgan</h2>
         </div>
-        <div className={s.loginBlock}>{props.isAuth ?  props.login : <NavLink to={'/login'}>Войти</NavLink>}
+        <div className={s.loginBlock}>{props.isAuth
+            ? <div> {props.login} - <button onClick={props.logout}>Log Out</button> </div>
+            : <NavLink to={'/login'}>Войти</NavLink>}
         </div>
     </header>
 }
