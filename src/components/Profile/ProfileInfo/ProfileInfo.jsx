@@ -3,6 +3,7 @@ import s from './ProfileInfo.module.css';
 import Preloader from "../../common/preloader/Preloader";
 import userPhoto from "../../../assets/images/user.jpg";
 import ProfileStatus from "../ProfileStatus/ProfileStatus";
+import ProfileStatusWithHooks from "../ProfileStatus/ProfileStatusWithHooks";
 
 const ProfileInfo = (props) => {
     if (!props.profile) {
@@ -27,7 +28,7 @@ const ProfileInfo = (props) => {
                 <div
                     className={s.descrProfile}>{props.profile.aboutMe != null ? props.profile.aboutMe : 'Информации нет...'}</div>
             </div>
-            <ProfileStatus status={props.status} updateStatus={props.updateStatus}/>
+            <ProfileStatusWithHooks status={props.status} updateStatus={props.updateStatus}/>
         </div>
     );
 }
